@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(131, 241, 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(5, 99, 68);
+
+}
+
+#principal{
+    text-align: center;
+    color: black;
+
+    /* Em HTML é id no CSS é #
+     (ou seja, tudo q indentificar com id, no css tudo chama com #
+     
+     Em HTML é class, em css é .
+
+
+     explicação: pra identificar apenas um elemento usa o id, quando for identificar mais de um (tipo uma categoria de elemento usa class)
+     */
+}
+
+h2{
+    color: rgb(8, 104, 8);
+}
+
+.basico {
+    color: rgb(59, 158, 158);
+    font-weight: 900;
+}
+
+.intermediario {
+    color: rgb(21, 102, 102);
+    font-weight: 900;
+}
+
+.avançado {
+    color: rgb(3, 32, 32);
+    font-weight: 900;
+}
+
+.destaquepreto{
+    background-color: black;
+}
+

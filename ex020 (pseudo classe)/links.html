@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+
+        #  = id
+        .  = class
+        :  = pseudoclass
+        :: = pseudoelement
+        >  = children
+
+        */
+        a{
+            color: beige;
+            text-decoration: none;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover{ /*pseuclasse Uma vez : */
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: brown;
+        }
+
+        a::after{ /*pseudoemento Duas vezes : */
+            content: '[link]';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100012852610321" target="_blank">Face</a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s" target="_blank">Canal do youtube</a></li>
+        <li><a href="https://www.instagram.com/ffc_arthur8/" target="_blank">Insta</a></li>
+    </ul>
+</body>
+</html>
