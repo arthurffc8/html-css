@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;
+            background-color: rgb(1, 19, 19);
+            height: 500px;
+            padding: 20px;
+        }
+
+        #conteudo {
+            position: absolute;
+            left: 50%;
+            top: 50%; /*o parametro absolute faz com que a gente consiga mudar a posição da caixa atras de left e top, aí faz os dois começar do meio (50%)*/
+            background-color: blue;
+            height: 200px;
+            width: 250px;
+
+            transform: translate(-50%, -50%); /*o translate faz a centralizar a partir do centro inves da extremidade superior esquerda*/
+        
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
