@@ -9,7 +9,11 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-    
+        :root {
+            --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+            --fonte02: 'Passion+One';
+            --fonte03: Sriracha;
+        }
 
         body {
             margin: 0px;
@@ -24,7 +28,7 @@
 
         header > h1 {
             font-size: 3.5em;
-            font-family: "Passion One";
+            font-family: var(--fonte02);
         }
 
         header > p > a {
@@ -37,50 +41,59 @@
             text-decoration: underline;
         }
 
+        div {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            padding-left: 30px;
+            line-height: 2em; /*espaçamento dupplo entre as linhas*/
+            font-family: var(--fonte03);
+            font-size: 4vw; /*usando o tamanho em relação ao tamanho da letra
+            10vh é 10% da altura
+            10vw é 10% da largura*/ 
+        }
+
         .fundobranco {
-            font-family: Sriracha;
+           
             background-color: white;
-            font-size: 1.7em;
-            max-width: 250px;
-            padding: 50px 0px 30px 30px;
+                   
+            
              
         }
 
         #joaninha {
-            font-family: Sriracha;
+            
             background-image: url(imagens/background001.jpg);
             background-size: cover;
             background-attachment: fixed;
-            padding: 10px;
+            
             
         }
 
         #joaninha > p {
             background-color: rgba(0, 0, 0, 0.226);
             color: white;
-            font-size: 1.7em;
-            max-width: 250px;
-            padding: 15px 0px 0px 30px;
-            margin: 15px 15px 15px 15px;
+                     
+            
+            
         
         }
 
         #caderno {
-            font-family: Sriracha;
+            
             background-image: url(imagens/background002.jpg);
             background-size: cover;
             background-attachment: fixed;
-            padding: 10px;
+            
 
         }
 
         #caderno > p {
             background-color: rgba(0, 0, 0, 0.452);
             color: white;
-            font-size: 1.7em;
+            
             max-width: 250px;
-            padding: 15px 5px 5px 30px;
-            margin: 15px;
+            
+            
         }
 
         footer {
@@ -89,7 +102,7 @@
             text-align: center;
             padding: 10px;
             font-size: 0.8em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: var(--fonte01);
         }
 
         footer > a {
@@ -109,17 +122,17 @@
 <body>
     <header>
         <h1>Cordel Moderno</h1>
-        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p>
+        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></p>
       
     </header>
 
 <div class="fundobranco">
-    Estou ficando cansado
-    Da tal tecnologia
-    Só se fala por e-mail
-    Mensagem curta e fria
-    Twitter e Facebook
-    Antes que eu caduque
+    Estou ficando cansado <br>
+    Da tal tecnologia <br>
+    Só se fala por e-mail <br>
+    Mensagem curta e fria <br>
+    Twitter e Facebook <br>
+    Antes que eu caduque <br>
     Vou dizer tudo em poesia.
 </div>
 
@@ -127,12 +140,12 @@
 
 <div id="joaninha">
     <p>
-        Não é mais como era antes
-        É tudo abreviado
-        "Você" só tem duas letras
-        O "O" e o "E" foi riscado
-        Para declarar o amor
-        Basta botar uma flor
+        Não é mais como era antes <br> <br>
+        É tudo abreviado <br> <br>
+        "Você" só tem duas letras <br> <br>
+        O "O" e o "E" foi riscado <br> <br>
+        Para declarar o amor <br> <br>
+        Basta botar uma flor <br> <br>
         E um coração desenhado.
         </div>
     </p>
@@ -140,20 +153,20 @@
 
 
 <div class="fundobranco">
-    Arroba agora não pesa
-    É parte de um endereço
+    Arroba agora não pesa <br>
+    É parte de um endereço <br>
     Ponto final nem se usa
-    Ou vai até no começo
-    Agora é .com
-    Se o saite é muito bom
-    Ele vale um alto preço.
+    Ou vai até no começo <br>
+    Agora é .com <br>
+    Se o saite é muito bom <br>
+    Ele vale um alto preço. <br>
     
-    Pra piorar a liguagem
-    O emoticom é um risco
-    Tem símbolo para tudo
-    Ponto e vírgula e um asterisco
-    Um beijo significa
-    Pra entender como fica
+    Pra piorar a liguagem <br>
+    O emoticom é um risco <br>
+    Tem símbolo para tudo <br>
+    Ponto e vírgula e um asterisco <br>
+    Um beijo significa <br>
+    Pra entender como fica <br>
     Decifre esse rabisco.
 </div>
 
@@ -161,12 +174,12 @@
 
 <div id="caderno">
     <p>
-        Tenho saudade das cartas
-        Escritas com a própria mão
-        Mandava no mês de Junho
-        Só chegava no Verão
-        Mas matava a saudade
-        Era texto de verdade
+        Tenho saudade das cartas <br>
+        Escritas com a própria mão <br>
+        Mandava no mês de Junho <br>
+        Só chegava no Verão <br>
+        Mas matava a saudade <br>
+        Era texto de verdade <br>
         Nas linhas do coração.
     </p>
 </div>
@@ -174,25 +187,25 @@
 
 
 <div class="fundobranco">
-    Agora, escrevo e envio
-    Chegando na mesma hora
-    Mas quando vou prosear
-    A pessoa foi embora
-    Abriu outro aplicativo
-    O mundo ficou cativo
-    Da tecnologia do agora.
+    Agora, escrevo e envio <br>
+    Chegando na mesma hora <br>
+    Mas quando vou prosear <br>
+    A pessoa foi embora <br>
+    Abriu outro aplicativo <br>
+    O mundo ficou cativo <br>
+    Da tecnologia do agora. <br>
     
-    Felizmente, pra orar
-    Não precisa de internet
-    Deus escuta todo mundo
-    Se quiser, faça esse teste
-    Dois pontos são dois joelhos
-    Seus lábios são aparelhos
-    Deixe que Deus interprete.
+    Felizmente, pra orar <br>
+    Não precisa de internet <br>
+    Deus escuta todo mundo <br>
+    Se quiser, faça esse teste <br>
+    Dois pontos são dois joelhos <br>
+    Seus lábios são aparelhos <br>
+    Deixe que Deus interprete. 
 </div>
 
 <footer>
-    Site criado por <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/">CursoemVideo</a>
+    Site criado por <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a>
 </footer>
 </body>
 </html>
