@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th, caption {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            background-color: lightgrey;
+            font-weight: 900;
+            font-size: 1.5em;
+
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th { /* meus cabeçalhos que tao dentro da linha da cabeça da minha tabela*/
+            position: sticky; /*sticky = colável (torna ele colavel)*/
+            top: 0;
+            background-color: gray;
+            
+
+            /*Pra fazer o cabeçalho acompanhar o rolamento da tabela é assim, coloca na table o position = relative.
+            E nesse thead > tr > th colocar o sticky, top 0 e o mesmo background*/
+        }
+
+        .num {
+            text-align: right;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+            /* :nth-child() é uma pseudoclasse que faz com que a caracsterista que voce dê pro seu child ( > ) só aconteça intervalado (no caso como é 2n aconteça a cada 2 vezes) */
+            /*No lugar do 2n Pode ser usado o odd ou even, se colocar odd vai afetar as linhas impares, se usar even vai afetar as linhas pares*/
+        }
+    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <!--
         ANATOMIA PARA TABELAS GRANDES
-        TABLE   
+        TABLE 
+            CAPTION
             THEAD
                 TR, TD TH
             TBODY 
@@ -19,22 +63,131 @@
                 TR, TD, TH            
     -->
     <table>
-       <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
+
+        <caption>População das cidades federativas
+
+        </caption>
+        <thead>
+                    <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 80px;">População</th>
+                
             </tr>
        </thead>
        <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>49 578 250</td>
+                <td class="num">45 578 250</td>
             </tr>
-
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 20 124 485</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 984</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 245 856</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 956</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 578 250</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 20 124 485</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 984</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 245 856</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 956</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 578 250</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 20 124 485</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 984</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 245 856</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 956</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 578 250</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 20 124 485</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 984</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 245 856</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 956</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 578 250</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num"> 20 124 485</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 984</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15 245 856</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 956</td>
+            </tr>
        </tbody>
        <tfoot>
+        <tr>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>000 000 000</strong></td>
 
+            <!-- th é cabeçalho da tabela (estado, populaçao), e todo td é o dado desse cabeçalho (sao paulo, rj, 20 587 859 milhoes)
+            E pra dizer pra minha tabela se o meu dado (td) está na coluna do meu th (se esta abaixo dele) eu uso scope = "col"
+            Pra dizer pra minha tabela que meu dado está na linha do meu th (ao lado dele) eu uso scope = "row"   -->
+        </tr>
        </tfoot>
     </table>
+
+    
 </body>
 </html>
