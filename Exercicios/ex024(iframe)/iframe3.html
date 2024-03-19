@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        iframe{
+            width: 95vw;
+            height: 450px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, reprehenderit? Voluptate dolorum minus libero tenetur architecto repellendus ratione sunt iste. Earum maxime explicabo libero dolores, corporis eius eligendi odit quibusdam.</p>
+
+    <ul>
+        <li><a href="iframe.html" target="frame">Primeira</a></li>
+        <li><a href="iframe2.html" target="frame">Segunda</a></li> 
+        <!--Pra abrir um link no frame que criou, é so da um "name" no frame (na tag do frame), e depois usar o target=""-->
+        
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, sequi velit, cumque aliquid culpa provident eligendi ut in totam consectetur ipsam porro architecto temporibus nihil ipsa! Ipsum explicabo minus corporis.</p>
+
+    <iframe name="frame" frameborder="1" srcdoc="<h1>Escolha uma das opções acima</h1>">Não é compativel</iframe>
+    <!-- A diferença do parâmetro srcdoc é que voce pode colocar uma tag de html, isso serve pra nao deixar o iframe em branco antes de voce carregar outra coisa nele-->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi harum, praesentium omnis suscipit dolor maxime ad ullam ex nemo sapiente inventore neque voluptatem assumenda. Accusantium nemo quas illo incidunt odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt animi laborum nobis, veniam saepe incidunt perferendis doloribus in, consequatur quae magnam voluptatibus earum facere libero. Dolorum suscipit quaerat expedita!</p>
+</body>
+</html>
