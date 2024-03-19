@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        caption {
+            font-weight: 900;
+            font-size: 1.7em;
+        }
+        .nome {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="Sexo">
+            <col class="Idade">
+            <col class="prof">
+            <!-- Faz isso pra poder identficar as colunas de dar caracteristicas pra ela inteira-->
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>  
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Odete</td>
+            <td>F</td>
+            <td>103</td>
+            <td>Cachorrona</td>
+        </tr>
+        <tr>
+            <td>Ana Cleide</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Dadeira</td>
+        </tr>
+        <tr>
+            <td>Ana Leticia</td>
+            <td>M</td>
+            <td>24</td>
+            <td>Fazendeira</td>
+        </tr>
+        <tr>
+            <td>Ana Helena</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana Luzia</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Prostituta</td>
+        </tr>
+    </table>
+</body>
+</html>
