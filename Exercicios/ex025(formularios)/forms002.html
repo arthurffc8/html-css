@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iuso">Usuário:</label>
+            <input type="text" name="uso" id="iuso" required minlength="8" placeholder="Nome de Usuário"> <!--esse REQUIRED faz com que o campo seja obrigatorio ser preenchido pra poder enviar
+            o MINLENGHT faz com que o campo tenha que ter no minimo 8 digitos
+            PLACEHOLDER é a dica do que tem que preencher na caixa
+        -->
+        </p>
+        <div> <!--Pode usar div ou p, tanto faz-->
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha">
+            <input type="submit">
+            <input type="reset">
+
+        </div>
+    </form>
+</body>
+</html>
