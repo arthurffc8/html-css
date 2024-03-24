@@ -6,6 +6,44 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="cadastro.php">
+
+        <p>
+            <label for="itime">Time</label>
+            <select name="time" id="itime">
+                <optgroup label="Paulistas">
+                    <option value="SP">São Paulo</option>
+                    <option value="SCCP">Corinthians</option>
+                    <option value="SEP">Palmeiras</option>
+                </optgroup>
+
+                <optgroup label="Cariocas">
+                    <option value="FFC">Fluminense</option>
+                    <option value="CRF">Flamengo</option>
+                    <option value="CRVG">Vasco</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="ADM">Admin</option>
+                <option value="PROF">Programador</option>
+            </datalist>
+            <!--Essa é a forma de dar opções predefinidas a uma caixa texto, mas nao impede que voce escreva a resposta, voce só incrementa o input, repara no parametro "LIST" dentro do input text, seguindo do DATALIST com o mesmo id-->
+        </p>
+
+        <p>
+            <label for="imsg">Relate sua reclamação</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
 </body>
 </html>
