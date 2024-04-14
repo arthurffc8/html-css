@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner {
+            background-color: rgb(66, 68, 70);
+            display: flex;            
+            flex-flow: row nowrap;
+        }
+        .item {
+            background-color: rgb(179, 177, 177);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+            flex-shrink: 1; /*Valor padrão é 1 (libera a diminuição do tamanho)*/
+            flex-grow: 0; /*Valor padrão é 0, que trava o crescimento do tamanho*/
+            
+        }
+
+        #grande {
+            flex-grow: 2;
+            
+        }
+
+        #maior{
+            flex-grow: 3; /*Quanto maior o indice no flex-grow mais ele cresce em relação as outros*/
+    
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div id="grande" class="item">B</div>
+        <div id="maior" class="item">C</div>
+
+    </div>
+    
+</body>
+</html>

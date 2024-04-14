@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner {
+            background-color: rgb(66, 68, 70);
+            display: flex;            
+            flex-flow: row nowrap;
+        }
+        .item {
+            background-color: rgb(179, 177, 177);
+            border: 1px solid black;
+            text-align: center;
+            
+            /*
+             
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 150px;  ISSO TUDO É SUBSTITUIDO POR FLEX sempre nessa ordem 
+            ex: 
+
+            flex = 0 1 auto; 
+            flex = initial; -->>> valores padroes (nao cresce, mas diminui e o tamanhao é o mesmo do conteudo)
+
+
+            flex: 0 0 auto;
+            flex: none;  ->>>>> totalmente rigido (nao aumenta, nao diminui e o tamanho vai ser o tamanho do conteudo)
+
+            flex: 1 1 auto;            
+            flex: auto; ---->>>>> Totalmente flexivel
+    
+            
+                    
+            
+            
+            
+            
+            
+            
+
+            flex:;
+            
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div id="A" class="item">A</div>
+        <div id="B" class="item">B</div>
+        <div id="C" class="item">C</div>
+
+    </div>
+    
+</body>
+</html>
