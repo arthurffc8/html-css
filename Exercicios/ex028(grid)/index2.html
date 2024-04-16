@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 100px)  30px; /*Inves de colocar valor por valor, se forem valor repetido, só dizer dizer que vc é X colunas de Ypx (repeat(X, Ypx))No final pode adicionar mais colunas com eespecificacoes diferetes*/            
+            grid-auto-rows: 100px; 
+            grid-gap: 5px;
+        }
+
+        .wrapper div {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: rgb(158, 157, 157);
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+
+    </main>
+</body>
+</html>

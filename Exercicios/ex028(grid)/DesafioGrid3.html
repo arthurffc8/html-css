@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesafioGrid3</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 3fr 5fr;
+            grid-auto-rows: minmax(200px, auto);
+            grid-gap: 50px;
+            text-align: center;
+            color: white;
+        }
+
+        #esq {
+            display: grid;
+            grid-gap: 2px;
+            
+        }
+        #esq * {
+            padding: 5px;
+        }
+        #meio * {
+            padding: 5px;
+        }
+        #dir * {
+            padding: 5px;
+        }
+
+        #esq > header{
+            grid-row: 1;
+        }
+
+        #meio{
+            display: grid;
+            grid-gap: 2px;
+            grid-template-columns: repeat(3, minmax(30px, auto))
+
+        }
+        #meio > header{
+            grid-column: 2 / span 2 ;
+        }
+        #meio > main {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #meio > article{
+            grid-column: 1 / -1;
+        }
+        #meio > section {
+            grid-column: 1 / -1;
+        }
+        #meio > footer {
+            grid-column: 1 / span 2;
+        }
+
+        #dir {
+            display: grid;
+            grid-template-columns: repeat(6, minmax(30px, auto));
+            grid-gap: 2px;
+        }
+        #dir > main {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #dir > header{
+            grid-column:  2 / span 3;
+        }
+        #dir > article {
+            grid-column: 1 / span 4;
+        }
+        #dir > section {
+            grid-column: 5 / span 2;
+            grid-row: 1 / span 2;
+        }
+        #dir > footer{
+            grid-column: 1 / -1;
+        }
+        #dir > aside {
+            grid-column: 1 / span 2;
+        }
+
+        header {background-color: lightseagreen;}
+        main {background-color: lightgray;}
+        article{background-color: blue;}
+        section{background-color: brown;}
+        footer{background-color: rgb(189, 189, 7);}
+        aside{background-color: orangered;}
+
+    </style>
+</head>
+<body>
+    <div id="esq">
+        <main>META</main>
+        <header>TITLE</header>
+        <article>COPY1</article>
+        <section>COPY2</section>
+        <footer>MEDIA</footer>
+        <aside>ASIDE</aside>
+    </div>
+    <div id="meio">
+        <main>META</main>
+        <header>TITLE</header>
+        <article>COPY1</article>
+        <section>COPY2</section>
+        <footer>MEDIA</footer>
+        <aside>ASIDE</aside>
+    </div>
+    <div id="dir">
+        <header>TITLE</header>
+        <main>META</main>
+        <article>COPY1</article>
+        <section>COPY2</section>
+        <footer>MEDIA</footer>
+        <aside>ASIDE</aside>
+    </div>
+
+    
+</body>
+</html>

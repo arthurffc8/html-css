@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(4, 1fr);
+            grid-template-rows: repeat(3, minmax(100px, auto));
+            grid-gap: 5px;
+
+           
+            border: 1px dashed black;
+            
+        }
+
+        #box1 {
+            grid-column: 1 / -1;
+
+        }
+
+        #box2 {            
+
+        }
+
+        #box3 {
+            grid-column: 2 / 4;
+
+        }
+
+        #box5{
+            grid-column: 1 / -1;
+            height: 20px;
+            text-align: center;
+
+        }
+
+        .wrapper div {
+            background-color: lightgrey;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: rgb(158, 157, 157);
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div id="box1">1</div>
+        <div id="box2" >2</div>
+        <div id="box3" >
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi cumque blanditiis ipsa sed saepe, inventore non provident sapiente labore dolor mollitia sint laborum cupiditate tempora dolorum praesentium quam expedita molestias! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem facilis optio ducimus explicabo distinctio eum ex dolorum nemo nobis aliquam omnis sunt, molestias numquam, maiores tempora perferendis itaque amet velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, ratione autem excepturi cupiditate sunt neque, reiciendis quia repellendus possimus placeat eaque earum eveniet debitis, a vero perspiciatis itaque corporis nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam hic ut animi dolore deleniti? Odio sunt natus a aliquam delectus accusamus minima eligendi! Magnam, mollitia voluptates illum aut voluptate officiis?</p>
+        </div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+        
+
+    </main>
+</body>
+</html>

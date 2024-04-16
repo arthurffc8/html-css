@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesafioGrid2</title>
+    <style>
+        body {
+            @media (min-width: 700px) {
+                display: grid;
+            }
+            grid-gap: 2px;
+            grid-template-columns: 200px minmax(120px, auto) 200px;
+            grid-auto-rows: minmax(100px, auto);
+            color: white;
+        }
+
+        header, footer {
+            background-color: lightseagreen;
+            grid-column: 1 / -1;
+        }
+
+        article {
+            background-color: green;
+            grid-column: 2;
+        }
+
+        main {
+            grid-column: 2;            
+
+            display: grid;
+            grid-template-columns: repeat(6, minmax(20px, auto));
+            grid-template-rows: minmax(20px, auto);
+            grid-gap: 2px;
+                       
+        }
+        div {
+            background-color: orangered;
+        }
+        section {
+            grid-column: 2;
+            background-color: blue;
+        }
+        aside {
+            background-color: rgb(241, 183, 21);
+            grid-column: 1 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <header>HEADER</header>
+    <article>HERO</article>
+    <main>
+        <div>SUB</div>
+        <div>SUB</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quasi fugit dolore aliquam tempora qui nam molestias esse temporibus magni at voluptatibus est totam voluptates asperiores, animi recusandae nulla doloribus?</div>
+        <div>SUB</div>
+        <div>SUB</div>
+        <div>SUB</div>
+    </main>
+    <section>CONTENT</section>
+    <aside>ASIDE</aside>
+    <footer>FOOTER</footer>
+    
+</body>
+</html>

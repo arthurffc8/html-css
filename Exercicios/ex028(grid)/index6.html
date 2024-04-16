@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrapper{
+            display: grid;
+            grid-template-columns:  repeat(7, 1fr);
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 5px;
+
+           
+            border: 1px dashed black;
+            
+        }
+
+        #exemplo {
+            grid-column: 2 / span 3;
+
+            /*grid-column: X / Y ->>> o meu ELEMENTO vai começar nA COLUNA X, e ir até a antes da coluna Y, no lugar de Y pode colocar -1 se desejar que o elemento va ate o final da linha, ou entao span Z que vai dizer que o elemento vai começar na coluna X e vai ocupar Z colunas 
+            */
+        }
+
+        .wrapper div {
+            background-color: lightgrey;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: rgb(158, 157, 157);
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <div>1</div>
+        <div id="exemplo">2</div>
+        <div>3</div>
+        <div>4</div>
+        
+
+    </main>
+</body>
+</html>
